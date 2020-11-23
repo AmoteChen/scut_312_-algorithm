@@ -1,4 +1,4 @@
-#一个栈中元素为整型，现在将这个栈从顶到底按从大到小的顺序排序，只允许申请一个栈，不能申请额外的数据结构
+/*一个栈中元素为整型，现在将这个栈从顶到底按从大到小的顺序排序，只允许申请一个栈，不能申请额外的数据结构*/
 public static void sortStackByStack(Stack<Integer> stack)
     {
         Stack<Integer> help=new Stack<>();
