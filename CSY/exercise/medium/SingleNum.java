@@ -54,10 +54,35 @@ public class SingleNum {
             return null;
         }
 
-    public static void main(String[] args) {
-        SingleNum test = new SingleNum();
+    public Integer getXorText(){
+        String inputText = scanner.nextLine().toString();
 
-        System.out.println(test.getText());
+        String arrayText = inputText.substring(1,inputText.length()-1);
+        String[] arr  = arrayText.split(",");
+        int[] array = new int[ arr.length];
+        for (int i = 0; i <  arr.length; i++) {
+            array[i] = Integer.parseInt(arr[i]);
+        }
+
+        if(array.length==1){
+            return array[0];
+        }
+
+        int sample = 0;
+        for (int num : array) {
+            sample ^= num;
+        }
+        return sample;
+    }
+
+
+    public static void main(String[] args) {
+//        SingleNum test = new SingleNum();
+//
+//        System.out.println(test.getText());
+
+        SingleNum test = new SingleNum();
+        System.out.println(test.getXorText());
 
     }
 
