@@ -1,5 +1,3 @@
-package com.csy.www.exercise;
-
 
 import java.util.Scanner;
 
