@@ -8,7 +8,7 @@ class Solution {
         if(nums.length == 1) return 1;
         else if(nums.length == 0 || nums==null)return 0;
         // dp思路1 dp[i] 表示以nums[i]结尾的最大上升子序列。一定要包括nums[i]
-        // dp[i]={dp[j]+1,j是i前面比i小的第一个数，+1表示包括nums[i]在内}
+        // dp[i]={dp[j]+1,j是i前面比i小的某个数，+1表示包括nums[i]在内}
         int [] dp = new int [nums.length];
         dp[0]=1;
         int max=dp[0];
