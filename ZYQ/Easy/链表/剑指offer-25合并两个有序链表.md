@@ -7,7 +7,7 @@
 注意：每次完成归并后，都要记得把指针指向下一个结点。经常忘记p=p.next。
 
 代码
-```java
+```
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 ==null) return  l2;
