@@ -43,3 +43,5 @@ Unloading JavaVM ：暂时没用过
 (*g_vm).DestroyJavaVM();
 ```
 
+另外还有注意的是不要在一个线程里多次Attach/Detach，会产生内存泄漏
+
